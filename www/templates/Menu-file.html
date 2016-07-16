@@ -1,0 +1,19 @@
+<ion-view view-title="cordovaFile">
+
+  <ion-nav-buttons side="left">
+        <button menu-toggle="left" class="button button-icon icon ion-navicon"></button>
+  </ion-nav-buttons>
+  <ion-nav-buttons side="right">
+        <button ui-sref="Menu.home" class="button button-icon icon ">Volver</button>
+  </ion-nav-buttons>
+
+  <ion-content>
+  	<input type="text" placeholder="Ingrese texto..." ng-model="archivo.texto"/>
+    <br/>
+    <input type= "button" value="Escribir Archivo" ng-click="escribirArchivo()"/>
+    {{escribir}}
+    <br/>
+    <input type= "button" value="Leer Archivo" ng-click="leerArchivo()"/>
+    {{leer}}
+  </ion-content>
+</ion-view>

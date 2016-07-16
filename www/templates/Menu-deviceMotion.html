@@ -1,0 +1,25 @@
+<ion-view view-title="cordovaDeviceMotion">
+
+  <ion-nav-buttons side="left">
+        <button menu-toggle="left" class="button button-icon icon ion-navicon"></button>
+  </ion-nav-buttons>
+  <ion-nav-buttons side="right">
+        <button ui-sref="Menu.home" class="button button-icon icon ">Volver</button>
+  </ion-nav-buttons>
+
+  <ion-content>
+    
+  {{datos.pantallaAlto}}
+
+  {{datos.pantallaAncho}}
+
+  <h6>X: {{datos.X}}</h6>
+  <h6>Y: {{datos.Y}}</h6>
+  <!-- <h6>Z: {{Z}}</h6> -->
+
+  <img ng-src="img/ionic.png" style="position:absolute; z-index:-1; top:{{datos.Y}}px; left:{{datos.X}}px"></img>
+
+  <!-- <img ng-src=img/ionic.png style=position:absolute; z-index:4; top:{{Y}}; left:{{X}};> -->
+
+  </ion-content>
+</ion-view>
